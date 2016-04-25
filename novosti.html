@@ -3,3 +3,11 @@ layout: default
 ---
 
 <h1>Novosti</h1>
+<ul>
+  {% for jezici in site.categories.skriptni-jezici%}
+    <li>
+      <a href="">{{jezici.title}}</a>
+      <p>{{jezici.meta}}</p>
+    </li>
+    {% endfor %}
+</ul>

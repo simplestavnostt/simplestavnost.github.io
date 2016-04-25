@@ -1,7 +1,8 @@
     <nav>
-      <ul>
-        <li><a href="{{siteurl.baseurl}}/">Home</a></li>
-        <li><a href="{{siteurl.baseurl}}/jezici/">Programski jezici</a></li>
+      <ul class="nav {{include.navclass}}">
+        <li><a href="{{siteurl.baseurl}}/" class="{% if page.url == '/index.html' %}current{% endif %}">Home</a></li>
+        <li><a href="{{siteurl.baseurl}}/jezici.html/">Programski jezici</a></li>
+        <li><a href="{{siteurl.baseurl}}/news.html/">News</a></li>
         <li><a href="{{siteurl.baseurl}}/novosti.html">Novosti</a></li>
       </ul>
     </nav>

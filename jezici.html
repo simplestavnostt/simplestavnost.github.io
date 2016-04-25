@@ -1,5 +1,14 @@
 ---
-layout: default
+layout: news 
 ---
 
 <h1>Programski jezici</h1>
+
+<ul>
+  {% for jezici in site.categories.jezici %}
+    <li>
+      <a href="">{{jezici.title}}</a>
+      <p>{{jezici.meta}}</p>
+    </li>
+    {% endfor %}
+</ul>
